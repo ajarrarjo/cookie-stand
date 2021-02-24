@@ -1,11 +1,11 @@
 body{
     background-color: rgb(47, 59, 170);
-    color:rgb(207, 18, 18);
+    color:rgb(218, 204, 204);
 }
 
 th{
     background-color: rgba(255, 255, 255, 0.445);
-    color: rgb(189, 17, 152);
+    color: rgb(26, 6, 117);
 }
 
 td{
@@ -14,7 +14,7 @@ td{
 }
 
 h1 a {
-    color: rgb(77, 17, 6);
+    color: rgb(176, 231, 25);
 }
 
 .Slider{
@@ -38,7 +38,7 @@ h1 a {
 
 @keyframes sliding {
     0%  {left: 0;}
-    14% {left: -714px;}
+    25% {left: -714px;}
     28% {left:-1428px;}
     42% {left:-2856px ;}
     56% {left: -3750px;}
@@ -56,4 +56,9 @@ th {
     
         border: 1px solid white;
       
+  }
+
+  h2 {
+
+    color: yellow;
   }
