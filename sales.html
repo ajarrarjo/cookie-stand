@@ -1,22 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link href="css/style.css" type="text/css" rel="stylesheet"/>
+    <title>Pat Salmon Cookies</title>
+    <link href="css/style.css" type="text/css" rel="stylesheet" />
 </head>
+
 <body>
 
     <main>
-<div id = "sales">
-   
-</div>
-<h1><a href="index.html">Pat Salmon Cookies</a></h1>
+        <form id="AddNewCity">
+            <fieldset>
 
+                <legend>New City</legend>
+                <label for="Location">Location</label>
+                <input type="text" id="Location" name="Location">
+                <label for="Min">MIN</label>
+                <input type="text" id="Min" name="Min">
+                <label for="Max">Max</label>
+                <input type="tel" id="Max" name="MAX">
+                <label for="Avg">Avg</label>
+                <input type="text" name="Avg" id="Avg">
+                <button type="submit">Add</button>
+            </fieldset>
+        </form>
+
+        <div id="sales"></div>
+        <h1><a href="index.html">Pat Salmon Cookies</a></h1>
     </main>
-    
+
+
+
 </body>
-<script  src = "app.js">
-</script>
+<script src="app.js"></script>
+
 </html>
