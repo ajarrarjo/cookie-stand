@@ -97,6 +97,7 @@ const Dubai = new SalmonCookies('Dubai', 11, 38, 3.7);
 const Paris = new SalmonCookies('Paris', 20, 38, 2.3);
 const Lima = new SalmonCookies('Lima', 2, 16, 4.6);
 
+
 Seattle.showHeader();
 Seattle.getCookies();
 Seattle.render();
@@ -112,9 +113,19 @@ Lima.footer();
 
 
 
-
-
-
+// lab09
+const formElement = document.getElementById('AddNewCity');
+formElement.addEventListener('submit',function(event){
+  event.preventDefault();
+  console.log(event);
+  const Location= event.target.Location.value;
+  const Min=event.target.Min.value;
+  const Max=event.target.Max.value;
+  const Avg = event.target.Avg.value;
+  const city = new SalmonCookies(Location,Min,Max,Avg);
+  city.getCookies();
+  city.render();
+});
 
 
 
