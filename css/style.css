@@ -68,3 +68,12 @@ th {
 
     text-align: center;
   }
+
+
+  p {
+
+    font-family: sans-serif;
+  }
+  ul li{
+      font-family: Georgia;
+  }
