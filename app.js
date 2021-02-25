@@ -98,18 +98,6 @@ const Paris = new SalmonCookies('Paris', 20, 38, 2.3);
 const Lima = new SalmonCookies('Lima', 2, 16, 4.6);
 
 
-Seattle.showHeader();
-Seattle.getCookies();
-Seattle.render();
-Tokyo.getCookies();
-Tokyo.render();
-Dubai.getCookies();
-Dubai.render();
-Paris.getCookies();
-Paris.render();
-Lima.getCookies();
-Lima.render();
-Lima.footer();
 
 
 
@@ -123,14 +111,28 @@ formElement.addEventListener('submit',function(event){
   const Max=event.target.Max.value;
   const Avg = event.target.Avg.value;
   const city = new SalmonCookies(Location,Min,Max,Avg);
+  document.querySelector('tr:last-child').remove();
   city.getCookies();
   city.render();
+  city.footer();
 });
 
 
 
 
 
+Seattle.showHeader();
+Seattle.getCookies();
+Seattle.render();
+Tokyo.getCookies();
+Tokyo.render();
+Dubai.getCookies();
+Dubai.render();
+Paris.getCookies();
+Paris.render();
+Lima.getCookies();
+Lima.render();
+Lima.footer();
 
 
 
